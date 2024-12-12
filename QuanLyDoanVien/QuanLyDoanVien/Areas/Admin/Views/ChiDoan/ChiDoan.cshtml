@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "ChiDoan";
+}
+
+<h3>Thông Tin Chi Đoàn</h3>
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <p>
+        @Html.ActionLink("+ Thêm mới", "AddCD", "ChiDoan", null, new { @class = "btn btn-primary" })
+    </p>
+    <form class="form-inline">
+        <div class="input-group" style="width: 650px;">
+            <input type="text" class="form-control" placeholder="Tìm kiếm" aria-label="Search" />
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit" style="height: 88%;">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Tên Chi Đoàn</th>
+            <th>Ảnh</th>
+            <th>Ngày Thành Lập</th>
+            <th>Thao Tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MaChiDoan</td>
+                <td>@item.TenChiDoan</td>
+                <td><img src="~/Image/Hinh/@item.Anh" height="90" /></td>
+                <td>@item.NgayLap.ToString("dd/MM/yyyy")</td>
+                <td>
+                    @Html.ActionLink("Sửa", "SuaCD", new { id = item.MaChiDoan }, new { @class = "btn btn-success" }) |
+                    @Html.ActionLink("Xoá", "Delete", new { id = item.MaChiDoan }, new { @class = "btn btn-danger" })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

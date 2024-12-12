@@ -1,0 +1,117 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DoanVien\\TTDoanVien\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF2B572-4628-40D4-B3AE-B4CC2F1A1B59}|TTDoanVien\\TTDoanVien.csproj|d:\\doanvien\\ttdoanvien\\ttdoanvien\\areas\\admin\\controllers\\doanviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0DF2B572-4628-40D4-B3AE-B4CC2F1A1B59}|TTDoanVien\\TTDoanVien.csproj|solutionrelative:ttdoanvien\\areas\\admin\\controllers\\doanviencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF2B572-4628-40D4-B3AE-B4CC2F1A1B59}|TTDoanVien\\TTDoanVien.csproj|d:\\doanvien\\ttdoanvien\\ttdoanvien\\areas\\admin\\views\\doanvien\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0DF2B572-4628-40D4-B3AE-B4CC2F1A1B59}|TTDoanVien\\TTDoanVien.csproj|solutionrelative:ttdoanvien\\areas\\admin\\views\\doanvien\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0DF2B572-4628-40D4-B3AE-B4CC2F1A1B59}|TTDoanVien\\TTDoanVien.csproj|d:\\doanvien\\ttdoanvien\\ttdoanvien\\areas\\admin\\views\\doanvien\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0DF2B572-4628-40D4-B3AE-B4CC2F1A1B59}|TTDoanVien\\TTDoanVien.csproj|solutionrelative:ttdoanvien\\areas\\admin\\views\\doanvien\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\DoanVien\\TTDoanVien\\TTDoanVien\\Areas\\Admin\\Views\\DoanVien\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TTDoanVien\\Areas\\Admin\\Views\\DoanVien\\Edit.cshtml",
+              "ToolTip": "D:\\DoanVien\\TTDoanVien\\TTDoanVien\\Areas\\Admin\\Views\\DoanVien\\Edit.cshtml",
+              "RelativeToolTip": "TTDoanVien\\Areas\\Admin\\Views\\DoanVien\\Edit.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T04:12:46.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DoanVienController.cs",
+              "DocumentMoniker": "D:\\DoanVien\\TTDoanVien\\TTDoanVien\\Areas\\Admin\\Controllers\\DoanVienController.cs",
+              "RelativeDocumentMoniker": "TTDoanVien\\Areas\\Admin\\Controllers\\DoanVienController.cs",
+              "ToolTip": "D:\\DoanVien\\TTDoanVien\\TTDoanVien\\Areas\\Admin\\Controllers\\DoanVienController.cs*",
+              "RelativeToolTip": "TTDoanVien\\Areas\\Admin\\Controllers\\DoanVienController.cs*",
+              "ViewState": "AgIAAFkAAAAAAAAAAAAUwGoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T04:07:01.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\DoanVien\\TTDoanVien\\TTDoanVien\\Areas\\Admin\\Views\\DoanVien\\Create.cshtml",
+              "RelativeDocumentMoniker": "TTDoanVien\\Areas\\Admin\\Views\\DoanVien\\Create.cshtml",
+              "ToolTip": "D:\\DoanVien\\TTDoanVien\\TTDoanVien\\Areas\\Admin\\Views\\DoanVien\\Create.cshtml",
+              "RelativeToolTip": "TTDoanVien\\Areas\\Admin\\Views\\DoanVien\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAABkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-12-12T03:59:00.033Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

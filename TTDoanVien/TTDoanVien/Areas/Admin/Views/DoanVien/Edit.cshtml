@@ -1,0 +1,97 @@
+﻿@model TTDoanVien.Areas.Admin.Data.DoanVienMV
+
+@{
+    ViewBag.Title = "Cập Nhật Đoàn Viên";
+}
+
+@using (Html.BeginForm("Edit", "DoanVien", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Cập nhật thông tin Đoàn viên</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <!-- Mã Đoàn Viên -->
+    <div class="form-group">
+        @Html.Label("Mã Đoàn Viên", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.MaDoanVien, new { @class = "form-control", @readonly = "readonly" })
+            @Html.ValidationMessageFor(model => model.MaDoanVien, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!-- Họ Tên -->
+    <div class="form-group">
+        @Html.Label("Họ và Tên", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.HoTen, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.HoTen, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!-- Ảnh -->
+    <div class="form-group">
+        <label for="fileUpload">Ảnh</label>
+        <input type="file" name="fileUpload" id="fileUpload" class="form-control" />
+    </div>
+
+    <!-- Ngày Sinh -->
+    <div class="form-group">
+        @Html.Label("Năm Sinh", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.NgaySinh, "{0:yyyy-MM-dd}", new { type = "date", @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.NgaySinh, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!-- Địa Chỉ -->
+    <div class="form-group">
+        @Html.Label("Địa Chỉ", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.DiaChi, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.DiaChi, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!-- SĐT -->
+    <div class="form-group">
+        @Html.Label("Số Điện Thoại", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.SDT, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.SDT, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!-- Ngày Vào -->
+    <div class="form-group">
+        @Html.Label("Ngày Vào Đoàn", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextBoxFor(model => model.NgayVao, "{0:yyyy-MM-dd}", new { type = "date", @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.NgayVao, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!-- Tên Chi Đoàn -->
+    <div class="form-group">
+        @Html.Label("Chi Đoàn", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.DropDownListFor(model => model.MaChiDoan, ViewBag.ChiDoanList as SelectList, "Chọn chi đoàn", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.MaChiDoan, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <!-- Nút Lưu và Trở Về -->
+    <div class="form-group">
+        <div class="row">
+            <div class="col-md-6 text-left">
+                @Html.ActionLink("Trở về", "Index", null, new { @class = "btn", @style = "background-color: #28a745; color: white;" })
+            </div>
+            <div class="col-md-6 text-right">
+                <input type="submit" value="Lưu" class="btn" style="background-color: #0056b3; color: white;" />
+            </div>
+        </div>
+    </div>
+</div>
+}

@@ -1,0 +1,69 @@
+﻿@model TTDoanVien.Areas.Admin.Data.DoanVienMV
+
+@{
+    ViewBag.Title = "Xóa Đoàn Viên";
+}
+
+<h2>Xóa Đoàn Viên</h2>
+
+<h3>Bạn có chắc chắn muốn xóa thông tin đoàn viên này không?</h3>
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <strong>Thông tin đoàn viên cần xóa</strong>
+    </div>
+    <div class="panel-body">
+        <table class="table table-bordered">
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.MaDoanVien)</th>
+                <td>@Html.DisplayFor(model => model.MaDoanVien)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.HoTen)</th>
+                <td>@Html.DisplayFor(model => model.HoTen)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Anh)</th>
+                <td>
+                    @if (!string.IsNullOrEmpty(Model.Anh))
+                    {
+                        <img src="@Url.Content("~/Image/Hinh/" + Model.Anh)" alt="Hình ảnh đoàn viên" width="100" />
+                    }
+                    else
+                    {
+                        <p>Chưa có ảnh</p>
+                    }
+                </td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.NgaySinh)</th>
+                <td>@Html.DisplayFor(model => model.NgaySinh, "{0:dd/MM/yyyy}")</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.DiaChi)</th>
+                <td>@Html.DisplayFor(model => model.DiaChi)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.SDT)</th>
+                <td>@Html.DisplayFor(model => model.SDT)</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.NgayVao)</th>
+                <td>@Html.DisplayFor(model => model.NgayVao, "{0:dd/MM/yyyy}")</td>
+            </tr>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.TenChiDoan)</th>
+                <td>@Html.DisplayFor(model => model.TenChiDoan)</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+@using (Html.BeginForm("DeleteConfirmed", "DoanVien", new { id = Model.MaDoanVien }, FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-actions">
+        <button type="submit" class="btn btn-danger">Xóa</button>
+        @Html.ActionLink("Quay lại danh sách", "Index", null, new { @class = "btn btn-secondary" })
+    </div>
+}
